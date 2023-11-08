@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Poppins&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #6B8E23;
+    font-family: 'poppins', sans-serif;
+}
+
+.container {
+    padding: 20px;
+    padding-bottom: 30px;
+    background: #6B8E23;
+    border-radius: 22px;
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.container:hover {
+    border: 1px solid #fff;
+}
+
+.search-box {
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.search-box input {
+    all: unset;
+    height: 40px;
+    width: 38%;
+    padding-left: 40px;
+    padding-right: 10px;
+    border: 2px solid #fff;
+    border-radius: 22px;
+    font-size: 15px;
+    font-style: italic;
+    color: #fff;
+}
+
+input:focus {
+    outline: 2px solid #0f0;
+    outline-offset: 2px;
+    width: 100%;
+    transition: width 0.4s ease-in-out;
+}
+
+#myInput::placeholder {
+    font-size: 14px;
+    color: #fff;
+}
+
+.container .fa-magnifying-glass {
+    color: #0f0;
+    font-size: 16px;
+    position: absolute;
+    left: 35px;
+}
+
+.container .displaying-message {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #0f0;
+    margin-left: 50px;
+    position: relative;
+    top: 14px;
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+.meal-image {
+    height: 150px;
+    width: 150px;
+    border: 2px solid#0f0;
+    border-radius: 30%;
+    margin-top: 15px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 90px;
+}
+
+.meal-image:hover {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+
+.container .meal-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 30%;
+}
+
+.container .view-recipe-btn {
+    all: unset;
+    margin-top: 220px;
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 22px;
+    color: #0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    font-size: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: right;
+    cursor: pointer;
+}
+
+.container .meal-details {
+    width: 200px;
+    border-radius: 30px;
+    font-size: 14px;
+    text-align: center;
+    padding: 7px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 170px;
+    background: #0f0;
+    border: 1px solid #fff;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.container .meal-name {
+    font-weight: bolder;
+    color: #fff;
+}
+
+.container .meal-area {
+    color: yellow;
+}
+
+.container .ingredients-box {
+    position: relative;
+    top: 205px;
+}
+
+.container .ingredients-box ul {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.8em 1.1em;
+    padding: 1.2em 0 0 1.2em;
+    font-size: 1em;
+}
+
+.container .ingredients-box li {
+    font-size: 12px;
+    color: #fff;
+}
+
+.container .recipe-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    height: 100%;
+    width: 100%;
+    border-radius: 22px;
+    padding: 25px;
+    left: -100%;
+    transition: all .2s;
+    overflow-y: scroll;
+}
+
+/* .container .recipe-box  */
+.container .recipe-box .close-btn {
+    height: 35px;
+    width: 35px;
+    background-color: #fff;
+    color: #f00;
+    border: 3px solid #0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    float: right;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    outline: 3px solid #f00;
+    outline-offset: 2px;
+    transition: all .2s;
+}
+
+.view-recipe-btn:hover {
+    background: #0f0;
+    color: #fff;
+    border: 2px solid #fff;
+    outline: 1px solid #0f0;
+    outline-offset: 2px;
+    transition: all .2s;
+}
+
+.container .recipe-box .Instructions {
+    position: relative;
+    top: 15px;
+    font-size: 1em;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: 'poppins', sans-serif;
+    font-style: italic;
+    color: #fff;
+}
